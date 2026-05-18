@@ -272,7 +272,7 @@ dd {
   display: grid;
   min-height: 330px;
   place-items: center;
-  padding: 28px;
+  padding: 12px;
   background:
     linear-gradient(135deg, rgba(45, 106, 79, 0.84), rgba(212, 154, 50, 0.72)),
     #2d6a4f;
@@ -280,6 +280,15 @@ dd {
   color: white;
   font-weight: 800;
   text-align: center;
+}
+
+.project-media iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 4px;
+  background: #111;
 }
 
 .project-media.accent {
