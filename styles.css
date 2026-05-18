@@ -212,10 +212,11 @@ dd {
 
 .section-heading {
   display: flex;
-  align-items: end;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 24px;
   margin-bottom: 28px;
+  text-align: left;
 }
 
 .project-tabs {
@@ -270,6 +271,7 @@ dd {
 
 .project-media {
   display: grid;
+  min-width: 0;
   min-height: 330px;
   place-items: center;
   padding: 12px;
@@ -280,16 +282,27 @@ dd {
   color: white;
   font-weight: 800;
   text-align: center;
+  overflow: hidden;
 }
 
 .project-media iframe,
 .project-media video {
   display: block;
   width: 100%;
+  max-width: 100%;
   aspect-ratio: 16 / 9;
   border: 0;
   border-radius: 4px;
   background: #111;
+}
+
+.compact-video {
+  min-height: 260px;
+}
+
+.compact-video iframe,
+.compact-video video {
+  width: min(100%, 480px);
 }
 
 .project-media.accent {
