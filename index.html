@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Name | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#intro" aria-label="Portfolio home">Your Name</a>
+      <nav class="top-nav" aria-label="Project navigation">
+        <a href="#intro">Intro</a>
+        <a href="#projects">Projects</a>
+        <a href="mailto:you@example.com">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro-section" id="intro">
+        <div class="intro-copy">
+          <p class="eyebrow">Portfolio</p>
+          <h1>Hi, I'm Your Name.</h1>
+          <p class="intro-text">
+            Write a short introduction here. You can describe what you study,
+            what kind of work you enjoy, the tools you use, and what you want
+            visitors to understand about your projects.
+          </p>
+          <div class="intro-actions">
+            <a class="button primary" href="#projects">View Projects</a>
+            <a class="button secondary" href="mailto:you@example.com">Email Me</a>
+          </div>
+        </div>
+
+        <aside class="profile-panel" aria-label="Profile details">
+          <div class="profile-photo">YN</div>
+          <dl>
+            <div>
+              <dt>Focus</dt>
+              <dd>Design, coding, research</dd>
+            </div>
+            <div>
+              <dt>Location</dt>
+              <dd>Your city</dd>
+            </div>
+            <div>
+              <dt>Currently</dt>
+              <dd>Building thoughtful projects</dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="projects-section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Work</p>
+          <h2 id="projects-title">Projects</h2>
+        </div>
+
+        <div class="project-tabs" role="tablist" aria-label="Project pages">
+          <button class="tab-button active" id="tab-project-one" role="tab" aria-selected="true" aria-controls="project-one">
+            Project One
+          </button>
+          <button class="tab-button" id="tab-project-two" role="tab" aria-selected="false" aria-controls="project-two">
+            Project Two
+          </button>
+          <button class="tab-button" id="tab-project-three" role="tab" aria-selected="false" aria-controls="project-three">
+            Project Three
+          </button>
+        </div>
+
+        <article class="project-page active" id="project-one" role="tabpanel" aria-labelledby="tab-project-one">
+          <div class="project-media">
+            <span>Project image or screenshot</span>
+          </div>
+          <div class="project-content">
+            <p class="project-label">Featured Project</p>
+            <h3>Project One Title</h3>
+            <p>
+              Add a description of your first project. Explain the goal, your
+              process, what you built, and what you learned.
+            </p>
+            <ul class="project-meta">
+              <li><strong>Role:</strong> Your role</li>
+              <li><strong>Tools:</strong> HTML, CSS, JavaScript</li>
+              <li><strong>Outcome:</strong> Main result or achievement</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" aria-label="View Project One live site">Live Site</a>
+              <a href="#" aria-label="View Project One source code">Source Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-page" id="project-two" role="tabpanel" aria-labelledby="tab-project-two" hidden>
+          <div class="project-media accent">
+            <span>Project image or screenshot</span>
+          </div>
+          <div class="project-content">
+            <p class="project-label">Case Study</p>
+            <h3>Project Two Title</h3>
+            <p>
+              Add a description of your second project. You might include the
+              problem you solved, the audience, and the most interesting feature.
+            </p>
+            <ul class="project-meta">
+              <li><strong>Role:</strong> Your role</li>
+              <li><strong>Tools:</strong> Tool one, tool two</li>
+              <li><strong>Outcome:</strong> Main result or achievement</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" aria-label="View Project Two live site">Live Site</a>
+              <a href="#" aria-label="View Project Two source code">Source Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-page" id="project-three" role="tabpanel" aria-labelledby="tab-project-three" hidden>
+          <div class="project-media warm">
+            <span>Project image or screenshot</span>
+          </div>
+          <div class="project-content">
+            <p class="project-label">Experiment</p>
+            <h3>Project Three Title</h3>
+            <p>
+              Add a description of your third project. Share what makes it
+              different from the others and what you would improve next.
+            </p>
+            <ul class="project-meta">
+              <li><strong>Role:</strong> Your role</li>
+              <li><strong>Tools:</strong> Tool one, tool two</li>
+              <li><strong>Outcome:</strong> Main result or achievement</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" aria-label="View Project Three live site">Live Site</a>
+              <a href="#" aria-label="View Project Three source code">Source Code</a>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Your Name. Built with HTML, CSS, and JavaScript.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
