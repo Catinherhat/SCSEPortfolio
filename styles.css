@@ -282,7 +282,8 @@ dd {
   text-align: center;
 }
 
-.project-media iframe {
+.project-media iframe,
+.project-media video {
   display: block;
   width: 100%;
   aspect-ratio: 16 / 9;
